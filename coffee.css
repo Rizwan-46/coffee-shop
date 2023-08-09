@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=REM:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top, rgba(0,0,0,0.8)60%,  rgba(0,0,0,0.8)60%), url(./5feb75be2a1985026bdffb1b71898c46.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.navbar{
+    width: 100%;
+    background-color: black;
+}
+.navbar .logo{
+    width: 200px;
+    height: 60px;
+    color: white;
+    font-size: 50px;
+    padding-left: 20px;
+    padding-top: 10px;
+    cursor: pointer;
+    float: left;
+    font-family: 'poppins' sans-serif;
+}
+.navbar h1 span{
+    color: #6F4E37;
+}
+.navbar nav ul{
+    list-style: none;
+    width: 100%;
+    text-align: right;
+    padding-right: 60px;
+}
+.navbar nav ul li{
+    display: inline-block;
+    margin: 30px 20px;
+    font-size: 20px;
+    font-family: 'REM' sans-serif;
+}
+.navbar nav ul li a{
+    text-decoration: none;
+    color: #6F4E37;
+}
+nav ul li a:hover{
+    color: rgb(107, 105, 105);
+    padding: 7px 0;
+    /* border: 2px solid  rgb(61, 53, 53);
+    border-radius: 15px; */
+    font-weight: bold;
+    transition: .3s ease-out;
+}
+.content h1 {
+    padding-top: 140px;
+    padding-left: 130px;
+    letter-spacing: 1px;
+    color: white;
+    font-size: 40px;
+    font-family: 'REM' sans-serif;
+    font-weight: lighter;
+}
+.content h1 span{
+    color: #6F4E37;
+}
+.content .pra{
+    color: white;
+    padding-left: 135px;
+    letter-spacing: 1px;
+    font-size: 18px;
+    padding-top: 7px;
+    padding-bottom: 10px;
+    font-family: 'Montserrat' sans-serif;
+}
+.content .pra1{
+    color: white;
+    letter-spacing: 1px;
+    font-size: 26px;
+    padding-left: 135px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    word-spacing: 2px;
+    font-family: 'Montserrat' sans-serif;
+}
+.content .pra1 .done1{
+   font-size: 35px;
+   font-family: 'poppins' sans-serif;
+   font-weight: bolder;
+}
+.content .pra1 .done{
+   color: #6F4E37;
+}
+.content .pra2{
+    color: white;
+    padding-left: 135px;
+    letter-spacing: .8px;
+    font-size: 19px;
+    padding-bottom: 15px;
+    font-family: 'poppins' sans-serif;
+}
+.content .pra2 span{
+    color: #6F4E37;
+}
+.dove{
+    padding-left: 135px;
+}
+.dove .btn{
+    padding: 10px;
+    background: transparent;
+    border: 2px solid  #6F4E37;
+    border-radius: 40px ;
+}
+.dove .btn a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+}
+.dove .btn a:hover{
+      color: white;
+      background-color: black;
+      border: none;
+} 
+.dove .btn:hover{
+    background-color: black;
+    border: none;
+}
+.navbar .fa-ellipsis{
+    display: none;
+}
+.navbar .fa-xmark{
+    display: none;
+}
+@media only screen and (max-width:850px){
+    .navbar nav ul li{
+        display: inline-block;
+        margin: 25px 0  30px 20px;
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width:450px){
+    .navbar nav ul li{
+           display: block;
+           margin: 0 0 0 20px;
+           margin-bottom: 10px;
+           text-align: center;
+           font-family: 'REM';
+    }
+    .navbar nav ul{
+        background: white;
+            position: fixed;
+            top: -1100px;
+            width: 100%;
+            height: 100vh;
+            padding-top: 140px;
+            z-index: 2;
+            overflow: hidden;
+            transition: all .4s ease;
+    }
+    .content h1 {
+        padding-top: 130px;
+        padding-left: 30px;
+        letter-spacing: 1px;
+        color: white;
+        font-size: 40px;
+    }
+    .content .pra{
+        color: white;
+        padding-left: 30px;
+        letter-spacing: 1px;
+        font-size: 18px;
+        padding-top: 7px;
+        padding-bottom: 10px;
+    }
+    .content .pra1{
+        padding-left: 30px;
+    }
+    .content .pra2{
+        padding-left: 30px;
+        margin-top: 20px;
+    }
+    .navbar .fa-ellipsis{
+        display: block;
+        position: absolute;
+        top: 3%;
+        right: 2%;
+        font-size: 30px;
+        color: #b66124;
+    }
+    .navbar .fa-xmark{
+        display: block;
+        position: absolute;
+        top: 4%;
+        right: 4%;
+        color: #b66124;
+    }
+
+
+}
